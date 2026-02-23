@@ -22,7 +22,7 @@ export default siteConfig({
   // linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
-  // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+   youtube: 'channel/MicaelBergamaschi', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -46,11 +46,11 @@ export default siteConfig({
      '/aulas-manaca': '6b57f85f046b47d8b0d5be48f98fba9b',
      '/mostra-enclo-2026': '2ebfcab3c1fa8076ba83d9da3b28ac50'
    }
-  pageUrlOverrides: null,
+  //pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
-   navigationStyle: 'default'
+  navigationStyle: 'default'
   // navigationStyle: 'custom',
   // navigationLinks: [
   //   {
