@@ -22,7 +22,10 @@ export default siteConfig({
   // linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
-   youtube: 'channel/MicaelBergamaschi', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  instagram: 'micaelbergamaschi',
+  youtube: '@MicaelBergamaschi', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  medium: '@mbergamaschi',
+  whatsapp: '5521979528800',
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
