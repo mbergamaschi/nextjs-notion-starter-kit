@@ -42,10 +42,10 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  // pageUrlOverrides: {
-  //   '/aulas-manaca': '6b57f85f046b47d8b0d5be48f98fba9b',
-  //   '/mostra-enclo-2026': '2ebfcab3c1fa8076ba83d9da3b28ac50'
-  // }
+   pageUrlOverrides: {
+     '/aulas-manaca': '6b57f85f046b47d8b0d5be48f98fba9b',
+     '/mostra-enclo-2026': '2ebfcab3c1fa8076ba83d9da3b28ac50'
+   }
   pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
