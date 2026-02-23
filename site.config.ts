@@ -50,16 +50,16 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+     {
+       title: 'Aulas de Tecido e Trapézio',
+       pageId: '6b57f85f046b47d8b0d5be48f98fba9b'
+     },
+     {
+       title: 'Proposta de Registro Visual: Mostra ENCLO 2026',
+       pageId: '2ebfcab3c1fa8076ba83d9da3b28ac50'
+     }
+   ]
 })
