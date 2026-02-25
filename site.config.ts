@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Micael Bergamaschi',
 
   // open graph metadata (optional)
-  description: 'Micael Bergamaschi: Artista, fotógrafo especializado em circo e professor de tecido acrobático, trapézio e diretor de criação no Rio de Janeiro',
+  description: 'Micael Bergamaschi: Artista, fotógrafo especializado em circo e professor de tecido acrobático, trapézio e diretor de criação no Rio de Janeiro.',
 
   // social usernames (optional)
   // twitter: '',
@@ -49,7 +49,7 @@ export default siteConfig({
      '/aulas-manaca': '6b57f85f046b47d8b0d5be48f98fba9b',
      '/mostra-enclo-2026': '2ebfcab3c1fa8076ba83d9da3b28ac50',
      '/copyright-notice': '68fd308bf71441079a75f2a7b20ce798',
-     '/lgpd': '12fcab3c1fa80e287adf6203e4789a4',
+     '/termos': '312fcab3c1fa80e287adf6203e4789a4',
      '/cfc': 'da26539d457c4c29aebf5e807d4f28f5',
      '/ccc': '8a98a09e888a44da87ba5a382a0a2f10',
      '/portfolio': '2eafcab3c1fa803bba7fcdb646ab4c36',
