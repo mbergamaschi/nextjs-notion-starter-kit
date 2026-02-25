@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Micael Bergamaschi',
 
   // open graph metadata (optional)
-  description: 'Micael Bergamaschi: Artista, fotógrafo especializado em circo e professor de tecido acrobático, trapézio e diretor de criação no Rio de Janeiro.',
+  description: 'Micael Bergamaschi: Artista, fotógrafo especializado em circo e professor de tecido acrobático, trapézio e diretor de criação no Rio de Janeiro',
 
   // social usernames (optional)
   // twitter: '',
