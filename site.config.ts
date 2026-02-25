@@ -48,7 +48,18 @@ export default siteConfig({
    pageUrlOverrides: {
      '/aulas-manaca': '6b57f85f046b47d8b0d5be48f98fba9b',
      '/mostra-enclo-2026': '2ebfcab3c1fa8076ba83d9da3b28ac50',
-     '/notas-direitos-autorais': '6052c6e813d54e58b4013d9d5d7c705b'
+     '/copyright-notice': '68fd308bf71441079a75f2a7b20ce798',
+     '/lgpd': '12fcab3c1fa80e287adf6203e4789a4',
+     '/cfc': 'da26539d457c4c29aebf5e807d4f28f5',
+     '/ccc': '8a98a09e888a44da87ba5a382a0a2f10',
+     '/portfolio': '2eafcab3c1fa803bba7fcdb646ab4c36',
+     '/cup': 'ca1f3a5a0bcf4de9bf2540ce71dba8a4',
+     '/2112': '04ade3c6e4c2476da44bca678d2b23db',
+     '/artistas': '2ebfcab3c1fa80568603c312361abe7c',
+     '/modalidades': '2ebfcab3c1fa8061aee6f0695afa0177',
+     '/notas-direitos-autorais': '6052c6e813d54e58b4013d9d5d7c705b',
+     '/mestras': '2ecfcab3c1fa8057b382d2777f347d95,
+     '/espetaculos': '311fcab3c1fa80ed9390eae3ee303e12'
    },
   //pageUrlOverrides: null,
 
