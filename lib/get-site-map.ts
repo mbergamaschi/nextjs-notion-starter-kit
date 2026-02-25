@@ -18,6 +18,7 @@ export async function getSiteMap(): Promise<types.SiteMap> {
   const partialSiteMap = await getAllPages(
     config.rootNotionPageId,
     config.rootNotionSpaceId ?? undefined
+    { maxDepth: 15 } // Expansão do limite empírico de travessia do grafo
   )
 
   return {
@@ -33,8 +34,12 @@ const getAllPages = pMemoize(getAllPagesImpl, {
 const getPage = async (pageId: string, opts?: any) => {
   console.log('\nnotion getPage', uuidToId(pageId))
   return notion.getPage(pageId, {
+    concurrency: 4, // Prevenção contra HTTP 429 (Too Many Requests)
+    fetchCollections: true, // Compilação imperativa de tuplas relacionais
+    chunkLimit: 1000, // Override do limite genérico de fragmentação (100 -> 1000)
+    fetchMissingBlocks: true,
     kyOptions: {
-      timeout: 30_000
+      timeout: 120_000 // Expansão da tolerância de socket TCP
     },
     ...opts
   })
@@ -44,7 +49,7 @@ async function getAllPagesImpl(
   rootNotionPageId: string,
   rootNotionSpaceId?: string,
   {
-    maxDepth = 1
+    maxDepth = 15
   }: {
     maxDepth?: number
   } = {}
@@ -54,6 +59,7 @@ async function getAllPagesImpl(
     rootNotionSpaceId,
     getPage,
     {
+      concurrency: 4,
       maxDepth
     }
   )
