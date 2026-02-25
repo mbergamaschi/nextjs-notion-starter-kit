@@ -30,9 +30,9 @@ export function FooterImpl() {
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>
-        © {startYear} - {currentYear} {config.author}
-        <span className={styles.copyright}> | </span>
-        <a href="/termos" className={styles.legalLink}>Termos de Uso, Políticas de Privacidade & Direitos Autorais</a>
+        © {startYear} - {currentYear} ∙ {config.author}
+        <span className={styles.copyright}> ∙ </span>
+        <a href="/termos" className={styles.legalLink}>Leia os Termos de Uso, Políticas de Privacidade & Direitos Autorais</a>
       </div>
 
       <div className={styles.settings}>
