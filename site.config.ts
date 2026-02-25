@@ -58,7 +58,7 @@ export default siteConfig({
      '/artistas': '2ebfcab3c1fa80568603c312361abe7c',
      '/modalidades': '2ebfcab3c1fa8061aee6f0695afa0177',
      '/notas-direitos-autorais': '6052c6e813d54e58b4013d9d5d7c705b',
-     '/mestras': '2ecfcab3c1fa8057b382d2777f347d95,
+     '/mestras': '2ecfcab3c1fa8057b382d2777f347d95',
      '/espetaculos': '311fcab3c1fa80ed9390eae3ee303e12'
    },
   //pageUrlOverrides: null,
