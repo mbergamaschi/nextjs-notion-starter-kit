@@ -13,15 +13,15 @@ import styles from './styles.module.css'
 export function FooterImpl() {
   const [hasMounted, setHasMounted] = React.useState(false)
   const { isDarkMode, toggleDarkMode } = useDarkMode()
+  
+  // Alterado para refletir seu período histórico de 2011 até o ano atual
   const currentYear = new Date().getFullYear()
+  const startYear = 2011 
 
-  const onToggleDarkMode = React.useCallback(
-    (e: any) => {
-      e.preventDefault()
-      toggleDarkMode()
-    },
-    [toggleDarkMode]
-  )
+  const onToggleDarkMode = React.useCallback((e: any) => {
+    e.preventDefault()
+    toggleDarkMode()
+  }, [toggleDarkMode])
 
   React.useEffect(() => {
     setHasMounted(true)
@@ -30,57 +30,19 @@ export function FooterImpl() {
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>
-        Copyright {currentYear} {config.author}
+        © {startYear} - {currentYear} {config.author}. Todos os direitos reservados. / All rights reserved.
+      </div>
+
+      <div className={styles.legalLinks}>
+        <a href="/notas-direitos-autorais" className={styles.legalLink}>Leia as Notas de Direitos Autorais</a>
+        <span className={styles.separator}>|</span>
+        <a href="/copyright-notice" className={styles.legalLink}>Read the Copyright Notice</a>
       </div>
 
       <div className={styles.settings}>
         {hasMounted && (
-          <a
-            className={styles.toggleDarkMode}
-            href='#'
-            role='button'
-            onClick={onToggleDarkMode}
-            title='Toggle dark mode'
-          >
+          <a className={styles.toggleDarkMode} href='#' role='button' onClick={onToggleDarkMode}>
             {isDarkMode ? <MoonIcon /> : <SunIcon />}
-          </a>
-        )}
-      </div>
-
-      <div className={styles.social}>
-        {config.twitter && (
-          <a
-            className={styles.twitter}
-            href={`https://x.com/${config.twitter}`}
-            title={`X @${config.twitter}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <TwitterIcon />
-          </a>
-        )}
-
-        {config.github && (
-          <a
-            className={styles.github}
-            href={`https://github.com/${config.github}`}
-            title={`GitHub @${config.github}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <GitHubIcon />
-          </a>
-        )}
-
-        {config.linkedin && (
-          <a
-            className={styles.linkedin}
-            href={`https://www.linkedin.com/in/${config.linkedin}`}
-            title={`LinkedIn ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <LinkedInIcon />
           </a>
         )}
       </div>
