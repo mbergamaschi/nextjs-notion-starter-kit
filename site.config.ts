@@ -47,7 +47,8 @@ export default siteConfig({
   //
    pageUrlOverrides: {
      '/aulas-manaca': '6b57f85f046b47d8b0d5be48f98fba9b',
-     '/mostra-enclo-2026': '2ebfcab3c1fa8076ba83d9da3b28ac50'
+     '/mostra-enclo-2026': '2ebfcab3c1fa8076ba83d9da3b28ac50',
+     '/notas-direitos-autorais': '6052c6e813d54e58b4013d9d5d7c705b'
    },
   //pageUrlOverrides: null,
 
