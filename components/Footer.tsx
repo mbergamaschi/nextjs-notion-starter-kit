@@ -34,7 +34,7 @@ export function FooterImpl() {
       </div>
       <div className={styles.copyright}>
         <a href="/termos" className={styles.legalLink}>Termos de Uso & Políticas de Privacidade</a>
-        <span className={styles.copyright> | </span>
+        <span className={styles.copyright}> | </span>
       </div>
 
       <div className={styles.settings}>
