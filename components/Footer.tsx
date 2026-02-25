@@ -32,6 +32,11 @@ export function FooterImpl() {
       <div className={styles.copyright}>
         © {startYear} - {currentYear} {config.author}. Todos os direitos reservados. All rights reserved.
       </div>
+      <div className={styles.legalLinks}>
+        <a href="/lgpd" className={styles.legalLink}>Termos de Uso & Políticas de Privacidade</a>
+        <span className={styles.separator}>|</span>
+        <a href="/notas-direitos-autorais" className={styles.legalLink}>Notas Autorais</a>
+      </div>
 
       <div className={styles.settings}>
         {hasMounted && (
